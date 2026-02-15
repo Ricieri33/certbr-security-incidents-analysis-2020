@@ -17,8 +17,6 @@ Analisar o comportamento dos incidentes de segurança no primeiro semestre de 20
 - Scan foi o tipo mais frequente no período.
 - Junho apresentou o maior volume absoluto de incidentes.
 
-<<<<<<< HEAD
-=======
 ## Visualizações
 ### Ranking de Incidentes
 ![Ranking de Incidentes](images/ranking_incidentes.png)
@@ -36,10 +34,6 @@ Analisar o comportamento dos incidentes de segurança no primeiro semestre de 20
 
 ![Worm](images/worm_evolucao.png)
 
-
-
-
->>>>>>> fafb24cd2be080d8018f214767ad916f4925efd1
 ## Estrutura do Projeto
 ```
 certbr-security-incidents-analysis-2020/
@@ -66,8 +60,5 @@ python notebooks/analise_certbr_2020.py
 
 ## Autor
 Marcelo Ricieri  
-<<<<<<< HEAD
 2026
-=======
-2026
->>>>>>> fafb24cd2be080d8018f214767ad916f4925efd1
+======
