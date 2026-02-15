@@ -19,7 +19,7 @@ Analisar o comportamento dos incidentes de segurança no primeiro semestre de 20
 
 ## Visualizações
 ### Ranking de Incidentes
-![Ranking de Incidentes](images/ranking_incidentes.png)
+![Ranking](images/ranking_incidentes.png)
 
 ### Evolução Mensal do Total
 ![Evolução Mensal](images/evolucao_mensal.png)
@@ -61,4 +61,3 @@ python notebooks/analise_certbr_2020.py
 ## Autor
 Marcelo Ricieri  
 2026
-======
