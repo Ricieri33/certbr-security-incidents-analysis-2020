@@ -85,7 +85,7 @@ contrib_percentual = (variacao_mar / variacao_mar.sum()) * 100
 print("Contribuição percentual no crescimento de março:")
 print(contrib_percentual.sort_values(ascending=False))
 
-# %% Removendo colunas não categóricas para cálculo de variação
+# %% Cálculo do total acumulado por categoria no período
 colunas_excluir = ["mes", "Mes_ref", "total", "crescimento_total_%"]
 categorias = df.columns.difference(colunas_excluir)
 
@@ -93,7 +93,7 @@ totais = df[categorias].sum()
 
 totais_ordenados = totais.sort_values(ascending=False)
 
-# %% Qual a diferença percentual entre elas?
+# %% Participação percentual por categoria no período
 percentual = (totais/totais.sum()) *100
 
 percentual_ordenado = (percentual.sort_values(ascending = False))
@@ -117,7 +117,7 @@ print(df.loc[df["mes"] == mes_pico])
 # %% Top3 incidentes
 top3 = totais_ordenados.head(3).index
 
-# %% Grafico do maior incidente 
+# %% Gráfico de ranking geral por tipo de incidente
 plt.figure()
 
 totais_ordenados.plot (kind="bar")
@@ -129,7 +129,7 @@ plt.tight_layout()
 
 plt.savefig("../images/ranking_incidentes.png", dpi=300) 
 plt.show()  
-# %% Grafico do maior incidente por mes
+# %% Gráfico de evolução mensal do total de incidentes
 plt.figure()
 
 plt.plot(df["Mes_ref"], df["total"], marker="o")
